@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Task1 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Task1 - Count: " + i);
+        }
+    }
+}
+class Task2 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Task2 - Count: " + i);
+        }
+    }
+}
+public class Thread {
+    public static void main(String[] args) {
+        Task1 t1 = new Task1();
+        Task2 t2 = new Task2();
+        t1.run();
+        t2.run();
+        Scanner scanner = new Scanner(System.in);
+        double input = scanner.nextDouble();
+        double d = input;
+        float f = (float) d;
+        System.out.println(f);
+    }
+}
