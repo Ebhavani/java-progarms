@@ -1,0 +1,24 @@
+import java.util.Queue;
+import java.util.ArrayDeque;
+
+public class QueueExample {
+    public static void main(String[] args) {
+        Queue<Integer> queue = new ArrayDeque<>();
+
+        // Enqueue elements
+        queue.offer(10);
+        queue.offer(20);
+        queue.offer(30);
+
+        // Dequeue element
+        int removed = queue.poll();
+        System.out.println("Removed: " + removed);
+
+        // Peek at front element
+        int front = queue.peek();
+        System.out.println("Front: " + front);
+
+        // Check if queue is empty
+        System.out.println("Is empty: " + queue.isEmpty());
+    }
+}
