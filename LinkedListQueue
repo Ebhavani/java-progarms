@@ -1,0 +1,12 @@
+import java.util.LinkedList;
+public class LinkedListQueue {
+    public static void main(String[] args) {
+        LinkedList<Integer> queue = new LinkedList<>();
+        queue.addLast(1); // enqueue
+        queue.addLast(2);
+        queue.addLast(3);
+
+        System.out.println(queue.removeFirst()); // dequeue, Output: 1
+        System.out.println(queue); // Output: [2, 3]
+    }
+}
