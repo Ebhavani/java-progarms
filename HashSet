@@ -1,0 +1,24 @@
+import java.util.HashSet;
+
+public class HashSetDemo {
+    public static void main(String[] args) {
+        // Creating a HashSet of Strings
+        HashSet<String> cars = new HashSet<>();
+
+        // Adding elements (duplicates are ignored)
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("BMW"); // Duplicate, will not be added
+
+        // Checking if an item exists
+        if (cars.contains("Ford")) {
+            System.out.println("Ford is in the set.");
+        }
+
+        // Iterating over the HashSet
+        for (String car : cars) {
+            System.out.println(car);
+        }
+    }
+}
