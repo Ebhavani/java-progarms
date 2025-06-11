@@ -1,0 +1,43 @@
+// Basic Concepts of Java
+
+public class test {
+    // Main method: Entry point of the program
+    public static void main(String[] args) {
+        // // Variables: Used to store data
+        int number = 1; // Integer variable
+        // String message = "Hello, Java!"; // String variable
+
+        // // Output: Printing to the console
+        // System.out.println(message);
+        // System.out.println("The number is: " + number);
+
+        // Conditional Statement: if-else
+        // if (number > 5) {
+        //     System.out.println("The number is greater than 5.");
+        // } 
+        
+        // else System.out.println("The number is less than 5");
+
+        // Loop: for loop
+        // System.out.println("Counting from 1 to 5:");
+        // for (int i = 0; i <= 5; i++) {
+        //     System.out.println(i);
+        // }
+
+        // Scanner: Taking user input
+        //Scanner scan = new Scanner(System.in); // Create Scanner object
+        // System.out.print("Enter your name: ");
+        // String userName = scan.nextLine(); // Read a line of text from user
+
+         greetUser("Name 1"); // Method call with user input
+         greetUser("Name 2"); // Method call with user input
+         greetUser("Name 3"); // Method call with user input
+
+    }
+
+    // Method: A reusable block of code
+    public static void greetUser(String name) {
+        System.out.println("Hello, " + name + "!");
+        System.out.println("End of the program.");
+    }
+}
